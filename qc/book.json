@@ -1,0 +1,61 @@
+{
+    "title": "帮助文档",
+    "description": "记录 GitBook 的配置和一些插件的使用",
+    "author": "yang.gy",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "plugins":[
+    "-lunr",
+     "-search",
+      "search-pro",
+	"anchor-navigation-ex",
+	"code",
+	"toggle-chapters",
+	"chapter-fold",
+	"splitter",
+	"-sharing"
+],
+    "plugins":[
+        
+        "local-video",
+        "expandable-chapters-small",
+        "back-to-top-button",
+         "-sharing"
+    ],
+
+"pluginsConfig": {
+     "disqus": {
+        "shortName": "gitbookuse"
+    },
+    "docSearch": {
+       "apiKey" : "replace_with_algolia_doc_search_api_key",
+       "index" : "replace_with_algolia_doc_search_index"
+     },
+    "anchor-navigation-ex": {
+        "showLevel": true,
+   		"associatedWithSummary": true,
+    	"printLog": false,
+    	"multipleH1": false,
+    	"mode": "float",
+    	"showGoTop":true,
+    	"float": {
+        	"floatIcon": "fa fa-navicon",
+        	"showLevelIcon": false,
+        	"level1Icon": "fa fa-hand-o-right",
+        	"level2Icon": "fa fa-hand-o-right",
+        	"level3Icon": "fa fa-hand-o-right"
+    	},
+    	"pageTop": {
+        	"showLevelIcon": false,
+        	"level1Icon": "fa fa-hand-o-right",
+        	"level2Icon": "fa fa-hand-o-right",
+        	"level3Icon": "fa fa-hand-o-right"
+    	}
+    }
+},
+"styles": {
+              "website": "styles/website.css"
+          }
+}
